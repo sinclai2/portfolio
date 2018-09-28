@@ -1,0 +1,20 @@
+extends includes/base
+block content
+  include includes/navbar
+  include includes/mixins
+  section#page-header
+    .container
+      .row
+        .col-md-6.m-auto.text-center.pt-4
+          h1 Read My Blog
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum modi facilis cum nisi optio, quos incidunt. Eveniet culpa, repudiandae quidem.
+
+  .container.mt-5#blogs
+    .row
+      +blog()
+      +blog()
+      +blog()
+      +blog()
+      +blog()
+      +blog()
+  include includes/footer

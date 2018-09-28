@@ -1,0 +1,13 @@
+section#contact 
+  .container 
+    .row
+      .col-md-6.text-center.py-3 
+        h2 What I'm looking for?
+        p.lead I'm looking for a junior front-end developer position
+      .col-md-6.text-center
+        h1.py-3 Lets Get In Touch!
+        form(method='POST' action='/')
+          input.form-control.form-control-lg(placeholder='Your name' type='text' name='message[name]').mb-3
+          input.form-control.form-control-lg(placeholder='Your e-mail' type='email' name='message[email]').mb-3
+          textarea.form-control.form-control-lg(placeholder='How can I help you' rows='8' name='message[message]').mb-3
+          button.btn.btn-primary.btn-block.mb-3.btn-lg Send
